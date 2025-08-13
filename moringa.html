@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>生命の木、モリンガ | あなたの毎日に、自然の恵みを</title>
-    
+
     <!-- noindex for search engines -->
-     <!-- 公開まではnoindexを変更しないでください🙇 山田コメント -->
-     <meta name="robots" content="noindex, nofollow">
-     <!-- 公開まではnoindexを変更しないでください🙇 山田コメント終わり -->
+    <!-- 公開まではnoindexを変更しないでください🙇 山田コメント -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- 公開まではnoindexを変更しないでください🙇 山田コメント終わり -->
 
     <!-- SVG Favicon -->
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌿%3C/text%3E%3C/svg%3E">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌿%3C/text%3E%3C/svg%3E">
 
     <style>
         /* 
-         * ===============================================
-         * Reset & Basic Settings
-         * ===============================================
-         */
+ * ===============================================
+ * Reset & Basic Settings
+ * ===============================================
+ */
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
 
         :root {
-            --color-primary: #4A6C55; /* 深い緑 */
-            --color-secondary: #F3F1E9; /* ナチュラルなベージュ */
-            --color-accent: #D4B76A; /* ゴールド系アクセント */
+            --color-primary: #4A6C55;
+            /* 深い緑 */
+            --color-secondary: #F3F1E9;
+            /* ナチュラルなベージュ */
+            --color-accent: #D4B76A;
+            /* ゴールド系アクセント */
             --color-text: #333333;
             --color-background: #FFFFFF;
             --font-family-base: 'Noto Sans JP', sans-serif;
         }
 
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -48,7 +55,8 @@
             font-weight: 300;
         }
 
-        img, svg {
+        img,
+        svg {
             max-width: 100%;
             height: auto;
             vertical-align: middle;
@@ -77,7 +85,7 @@
                 padding: 60px 0;
             }
         }
-        
+
         .section-title {
             text-align: center;
             font-size: 2.2rem;
@@ -95,7 +103,7 @@
             background-color: var(--color-accent);
             margin: 15px auto 0;
         }
-        
+
         @media (max-width: 768px) {
             .section-title {
                 font-size: 1.8rem;
@@ -119,7 +127,7 @@
             border-bottom: 1px solid #eee;
             width: 100%;
         }
-        
+
         .header .container {
             display: flex;
             justify-content: space-between;
@@ -130,7 +138,7 @@
             width: 180px;
             height: auto;
         }
-        
+
         .header-cta {
             display: inline-block;
             background-color: var(--color-primary);
@@ -142,14 +150,16 @@
             font-weight: 500;
             transition: background-color 0.3s ease;
         }
+
         .header-cta:hover {
             background-color: #385240;
         }
-        
+
         @media (max-width: 768px) {
             .logo svg {
                 width: 140px;
             }
+
             .header-cta {
                 padding: 6px 15px;
                 font-size: 0.8rem;
@@ -167,7 +177,7 @@
             text-align: center;
             padding: 100px 0;
         }
-        
+
         .hero-animated-svg {
             max-width: 500px;
             margin: 0 auto 40px;
@@ -191,9 +201,11 @@
             .hero {
                 padding: 60px 0;
             }
+
             .hero h1 {
                 font-size: 1.8rem;
             }
+
             .hero p {
                 font-size: 1rem;
             }
@@ -213,14 +225,14 @@
             border-radius: 50px;
             font-weight: 700;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         .cta-button:hover {
             background-color: #c9a85a;
             transform: translateY(-2px);
         }
-        
+
         /* 
          * ===============================================
          * Recommended Section
@@ -261,12 +273,13 @@
         .feature:last-child {
             margin-bottom: 0;
         }
-        
+
         .feature.reverse {
             flex-direction: row-reverse;
         }
 
-        .feature-image, .feature-text {
+        .feature-image,
+        .feature-text {
             flex: 1;
         }
 
@@ -276,7 +289,7 @@
             border-radius: 8px;
             background-color: var(--color-secondary);
         }
-        
+
         .feature-text h3 {
             font-size: 1.8rem;
             font-weight: 400;
@@ -286,16 +299,19 @@
         }
 
         @media (max-width: 768px) {
-            .feature, .feature.reverse {
+
+            .feature,
+            .feature.reverse {
                 flex-direction: column;
                 gap: 40px;
                 text-align: center;
             }
+
             .feature-text h3 {
                 font-size: 1.5rem;
             }
         }
-        
+
         /* 
          * ===============================================
          * Nutrient Graph Section
@@ -310,7 +326,7 @@
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .nutrient-graph-container svg text {
             font-family: var(--font-family-base);
             font-size: 12px;
@@ -337,7 +353,7 @@
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
-        
+
         .review-card {
             border: 1px solid #e0e0e0;
             padding: 30px;
@@ -345,17 +361,18 @@
             background-color: #fff;
             transition: transform 0.3s, box-shadow 0.3s;
         }
+
         .review-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
         }
-        
+
         .review-header {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
         }
-        
+
         .review-avatar {
             width: 50px;
             height: 50px;
@@ -363,28 +380,28 @@
             background-color: #e0e0e0;
             margin-right: 15px;
         }
-        
+
         .review-info h4 {
             font-weight: 500;
             font-size: 1rem;
         }
-        
+
         .review-info p {
             font-size: 0.9rem;
             color: #777;
             line-height: 1.2;
         }
-        
+
         .review-stars {
             margin-bottom: 15px;
         }
-        
+
         .review-stars svg {
             width: 20px;
             height: 20px;
             fill: var(--color-accent);
         }
-        
+
         .review-body {
             font-size: 0.95rem;
         }
@@ -426,7 +443,7 @@
                 gap: 50px;
             }
         }
-        
+
         /* 
          * ===============================================
          * Recipe Section
@@ -450,7 +467,7 @@
             height: 200px;
             background-color: var(--color-secondary);
         }
-        
+
         .recipe-content {
             padding: 20px;
         }
@@ -460,7 +477,7 @@
             font-weight: 500;
             margin-bottom: 10px;
         }
-        
+
         /* 
          * ===============================================
          * Purchase Section
@@ -470,12 +487,12 @@
             background-color: var(--color-secondary);
             text-align: center;
         }
-        
+
         .purchase-container {
             max-width: 600px;
             margin: 0 auto;
         }
-        
+
         .product-box {
             background: #fff;
             padding: 30px;
@@ -483,7 +500,7 @@
             margin-bottom: 30px;
             border: 1px solid #ddd;
         }
-        
+
         .product-box h3 {
             font-size: 1.4rem;
             font-weight: 500;
@@ -497,7 +514,7 @@
          */
         .footer {
             background-color: var(--color-primary);
-            color: rgba(255,255,255,0.8);
+            color: rgba(255, 255, 255, 0.8);
             text-align: center;
             padding: 40px 20px;
         }
@@ -506,9 +523,8 @@
             font-size: 0.9rem;
             letter-spacing: 0.05em;
         }
-
     </style>
-    
+
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -541,6 +557,7 @@
     }
     </script>
 </head>
+
 <body>
 
     <header class="header">
@@ -548,8 +565,10 @@
             <div class="logo">
                 <!-- SVG Logo (Corrected) -->
                 <svg viewBox="0 0 240 40" xmlns="http://www.w3.org/2000/svg">
-                    <text x="0" y="28" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="26" fill="#333" font-weight="700" letter-spacing="1">MORINGA</text>
-                    <text x="145" y="28" font-family="'Noto Sans JP', sans-serif" font-size="22" fill="#555" font-weight="300" letter-spacing="1.5">LIFE</text>
+                    <text x="0" y="28" font-family="'Helvetica Neue', 'Arial', sans-serif" font-size="26" fill="#333"
+                        font-weight="700" letter-spacing="1">MORINGA</text>
+                    <text x="145" y="28" font-family="'Noto Sans JP', sans-serif" font-size="22" fill="#555"
+                        font-weight="300" letter-spacing="1.5">LIFE</text>
                 </svg>
             </div>
             <a href="#purchase" class="header-cta">商品のご購入</a>
@@ -564,49 +583,56 @@
                 <!-- Animated SVG Main Visual -->
                 <svg class="hero-animated-svg" viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
                     <defs>
-                        <path id="leaf" d="M0,0 C15,-15 35,-15 50,0 C35,15 15,15 0,0 Z" fill="#4A6C55"/>
+                        <path id="leaf" d="M0,0 C15,-15 35,-15 50,0 C35,15 15,15 0,0 Z" fill="#4A6C55" />
                     </defs>
                     <path d="M250,300 L250,100" stroke="#6A8A75" stroke-width="3" stroke-linecap="round">
-                        <animate attributeName="d" from="M250,300 L250,300" to="M250,300 L250,100" dur="1.5s" begin="0s" fill="freeze"/>
+                        <animate attributeName="d" from="M250,300 L250,300" to="M250,300 L250,100" dur="1.5s" begin="0s"
+                            fill="freeze" />
                     </path>
                     <g transform="translate(250, 150) scale(0.9)">
                         <use href="#leaf" opacity="0" transform="rotate(-30)">
-                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze"/>
-                            <animateTransform attributeName="transform" type="rotate" values="-30; -25; -30" dur="5s" begin="1s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze" />
+                            <animateTransform attributeName="transform" type="rotate" values="-30; -25; -30" dur="5s"
+                                begin="1s" repeatCount="indefinite" />
                         </use>
                     </g>
                     <g transform="translate(250, 180) scale(0.85)">
                         <use href="#leaf" opacity="0" transform="rotate(150)">
-                             <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.3s" fill="freeze"/>
-                             <animateTransform attributeName="transform" type="rotate" values="150; 155; 150" dur="6s" begin="1.3s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.3s" fill="freeze" />
+                            <animateTransform attributeName="transform" type="rotate" values="150; 155; 150" dur="6s"
+                                begin="1.3s" repeatCount="indefinite" />
                         </use>
                     </g>
                     <g transform="translate(250, 210) scale(0.8)">
                         <use href="#leaf" opacity="0" transform="rotate(-45)">
-                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.6s" fill="freeze"/>
-                            <animateTransform attributeName="transform" type="rotate" values="-45; -40; -45" dur="4.5s" begin="1.6s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.6s" fill="freeze" />
+                            <animateTransform attributeName="transform" type="rotate" values="-45; -40; -45" dur="4.5s"
+                                begin="1.6s" repeatCount="indefinite" />
                         </use>
                     </g>
-                     <g transform="translate(250, 240) scale(0.75)">
+                    <g transform="translate(250, 240) scale(0.75)">
                         <use href="#leaf" opacity="0" transform="rotate(135)">
-                             <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.9s" fill="freeze"/>
-                             <animateTransform attributeName="transform" type="rotate" values="135; 140; 135" dur="5.5s" begin="1.9s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.9s" fill="freeze" />
+                            <animateTransform attributeName="transform" type="rotate" values="135; 140; 135" dur="5.5s"
+                                begin="1.9s" repeatCount="indefinite" />
                         </use>
                     </g>
-                     <g transform="translate(250, 120) scale(1)">
+                    <g transform="translate(250, 120) scale(1)">
                         <use href="#leaf" opacity="0" transform="rotate(45)">
-                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze"/>
-                            <animateTransform attributeName="transform" type="rotate" values="45; 50; 45" dur="5s" begin="0.8s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze" />
+                            <animateTransform attributeName="transform" type="rotate" values="45; 50; 45" dur="5s"
+                                begin="0.8s" repeatCount="indefinite" />
                         </use>
                     </g>
                     <g transform="translate(250, 120) scale(1)">
                         <use href="#leaf" opacity="0" transform="rotate(-45)">
-                             <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze"/>
-                             <animateTransform attributeName="transform" type="rotate" values="-45; -50; -45" dur="5.2s" begin="0.8s" repeatCount="indefinite"/>
+                            <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.8s" fill="freeze" />
+                            <animateTransform attributeName="transform" type="rotate" values="-45; -50; -45" dur="5.2s"
+                                begin="0.8s" repeatCount="indefinite" />
                         </use>
                     </g>
                 </svg>
-                
+
                 <h1>生命の木と呼ばれる奇跡の植物、<br>モリンガの恵みをあなたに。</h1>
                 <p>90種類以上の栄養素をバランス良く含み、毎日の健康と美容をサポートします。</p>
                 <a href="#purchase" class="cta-button">今すぐ購入する</a>
@@ -619,17 +645,25 @@
                 <h2 class="section-title">こんな方におすすめ</h2>
                 <div class="recommend-grid">
                     <div class="recommend-item">
-                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17,2H7C4.24,2,2,4.24,2,7v10c0,2.76,2.24,5,5,5h10c2.76,0,5-2.24,5-5V7C22,4.24,19.76,2,17,2z M12,19.2 c-3.97,0-7.2-3.23-7.2-7.2S8.03,4.8,12,4.8s7.2,3.23,7.2,7.2S15.97,19.2,12,19.2z M12,6c-3.31,0-6,2.69-6,6s2.69,6,6,6 s6-2.69,6-6S15.31,6,12,6z M13,12.5V8h-2v5h4v-1.5H13z"/></svg>
+                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17,2H7C4.24,2,2,4.24,2,7v10c0,2.76,2.24,5,5,5h10c2.76,0,5-2.24,5-5V7C22,4.24,19.76,2,17,2z M12,19.2 c-3.97,0-7.2-3.23-7.2-7.2S8.03,4.8,12,4.8s7.2,3.23,7.2,7.2S15.97,19.2,12,19.2z M12,6c-3.31,0-6,2.69-6,6s2.69,6,6,6 s6-2.69,6-6S15.31,6,12,6z M13,12.5V8h-2v5h4v-1.5H13z" />
+                        </svg>
                         <h3>野菜不足が気になる方</h3>
                         <p>食生活が乱れがちな現代人に不足しがちなビタミン、ミネラルを手軽に補給。</p>
                     </div>
                     <div class="recommend-item">
-                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,21.35L10.55,20.03C5.4,15.36,2,12.27,2,8.5C2,5.41,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.08C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.41,22,8.5c0,3.77-3.4,6.86-8.55,11.53L12,21.35z"/></svg>
+                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12,21.35L10.55,20.03C5.4,15.36,2,12.27,2,8.5C2,5.41,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.08C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.41,22,8.5c0,3.77-3.4,6.86-8.55,11.53L12,21.35z" />
+                        </svg>
                         <h3>内側からキレイを目指したい方</h3>
                         <p>豊富なポリフェノールと抗酸化作用で、エイジングケアをサポートします。</p>
                     </div>
                     <div class="recommend-item">
-                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7,2v11h3v9l7-12h-4l4-8H7z"/></svg>
+                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7,2v11h3v9l7-12h-4l4-8H7z" />
+                        </svg>
                         <h3>毎日を元気に過ごしたい方</h3>
                         <p>必須アミノ酸やGABAを含み、活力あふれる毎日を応援します。</p>
                     </div>
@@ -641,7 +675,8 @@
         <section id="nutrients" class="section">
             <div class="container">
                 <h2 class="section-title">スーパーフードとの栄養素比較</h2>
-                <p style="text-align: center; max-width: 700px; margin: -40px auto 40px;">モリンガ（葉の乾燥粉末）は、他のスーパーフードと比較しても非常に多くの栄養素をバランス良く含んでいます。<br>（可食部100gあたり）</p>
+                <p style="text-align: center; max-width: 700px; margin: -40px auto 40px;">
+                    モリンガ（葉の乾燥粉末）は、他のスーパーフードと比較しても非常に多くの栄養素をバランス良く含んでいます。<br>（可食部100gあたり）</p>
                 <div class="nutrient-graph-container">
                     <svg width="100%" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
                         <text x="10" y="65" class="bar-label">ポリフェノール</text>
@@ -662,7 +697,7 @@
                         <text x="10" y="315" class="bar-label">GABA</text>
                         <rect x="150" y="300" width="220" height="25" fill="#E0F2E5" rx="5"></rect>
                         <text x="380" y="318" class="bar-value" text-anchor="end">発芽玄米の約4倍</text>
-                        <line x1="150" y1="30" x2="150" y2="350" stroke="#ccc" stroke-width="1"/>
+                        <line x1="150" y1="30" x2="150" y2="350" stroke="#ccc" stroke-width="1" />
                     </svg>
                 </div>
             </div>
@@ -675,11 +710,14 @@
                     <div class="feature-image">
                         <!-- SVG Placeholder Image -->
                         <svg class="placeholder-svg" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="100%" height="100%" fill="none"/>
-                          <path d="M0 250 Q 100 200, 200 250 T 400 250" stroke="#A9D0B5" stroke-width="3" fill="none"/>
-                          <path d="M0 280 Q 50 240, 100 280 T 200 280 T 300 280 T 400 280" stroke="#C8EAD0" stroke-width="2" fill="none" opacity="0.7"/>
-                          <circle cx="350" cy="80" r="30" fill="#F3F1E9" stroke="#D4B76A" stroke-width="2"/>
-                          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#aaa" font-size="16px" font-family="sans-serif">TASTE IMAGE</text>
+                            <rect width="100%" height="100%" fill="none" />
+                            <path d="M0 250 Q 100 200, 200 250 T 400 250" stroke="#A9D0B5" stroke-width="3"
+                                fill="none" />
+                            <path d="M0 280 Q 50 240, 100 280 T 200 280 T 300 280 T 400 280" stroke="#C8EAD0"
+                                stroke-width="2" fill="none" opacity="0.7" />
+                            <circle cx="350" cy="80" r="30" fill="#F3F1E9" stroke="#D4B76A" stroke-width="2" />
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#aaa"
+                                font-size="16px" font-family="sans-serif">TASTE IMAGE</text>
                         </svg>
                     </div>
                     <div class="feature-text">
@@ -691,58 +729,91 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- How to Use Section -->
         <section id="how-to-use" class="section">
             <div class="container">
                 <h2 class="section-title">こんなときに飲みましょう</h2>
                 <div class="how-to-use-grid">
                     <div class="how-to-use-item">
-                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4.5,12c0-0.83,0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S6.83,13.5,6,13.5S4.5,12.83,4.5,12z M1,12h2 M11,2v2 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7z M21,12h2 M16.5,13.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5 s1.5,0.67,1.5,1.5S17.33,13.5,16.5,13.5z M18,6.5L19.41,5.09 M4.59,19.41L6,18 M18,18l1.41,1.41 M4.59,5.09L6,6.5 M13,22h-2v-2h2V22z"/></svg>
+                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.5,12c0-0.83,0.67-1.5,1.5-1.5s1.5,0.67,1.5,1.5S6.83,13.5,6,13.5S4.5,12.83,4.5,12z M1,12h2 M11,2v2 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7z M21,12h2 M16.5,13.5c-0.83,0-1.5-0.67-1.5-1.5s0.67-1.5,1.5-1.5 s1.5,0.67,1.5,1.5S17.33,13.5,16.5,13.5z M18,6.5L19.41,5.09 M4.59,19.41L6,18 M18,18l1.41,1.41 M4.59,5.09L6,6.5 M13,22h-2v-2h2V22z" />
+                        </svg>
                         <h3>朝 / MORNING</h3>
                         <p>スムージーやヨーグルトに混ぜて、1日の始まりに必要な栄養をチャージ。</p>
                     </div>
                     <div class="how-to-use-item">
-                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7z M12,15c-1.65,0-3-1.35-3-3s1.35-3,3-3s3,1.35,3,3 S13.65,15,12,15z M1,12h2 M21,12h2 M12,1v2 M12,21v2 M4.22,4.22l1.42,1.42 M18.36,18.36l1.42,1.42 M4.22,19.78l1.42-1.42 M18.36,5.64l1.42-1.42"/></svg>
+                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7z M12,15c-1.65,0-3-1.35-3-3s1.35-3,3-3s3,1.35,3,3 S13.65,15,12,15z M1,12h2 M21,12h2 M12,1v2 M12,21v2 M4.22,4.22l1.42,1.42 M18.36,18.36l1.42,1.42 M4.22,19.78l1.42-1.42 M18.36,5.64l1.42-1.42" />
+                        </svg>
                         <h3>昼 / LUNCH</h3>
                         <p>ランチのお供に。お水に溶かして、午後のもうひと頑張りをサポート。</p>
                     </div>
                     <div class="how-to-use-item">
-                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.34,2.02C6.59,1.82,2,6.43,2,12c0,5.52,4.48,10,10,10c3.71,0,6.93-2.02,8.66-5.02C17.79,18.4,14.3,20,10.5,20 C5.8,20,2,16.2,2,11.5c0-3.95,2.48-7.33,6.01-8.54C8.77,2.5,9.5,2,10.29,2C11.1,2,11.83,2.02,12.34,2.02z"/></svg>
+                        <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.34,2.02C6.59,1.82,2,6.43,2,12c0,5.52,4.48,10,10,10c3.71,0,6.93-2.02,8.66-5.02C17.79,18.4,14.3,20,10.5,20 C5.8,20,2,16.2,2,11.5c0-3.95,2.48-7.33,6.01-8.54C8.77,2.5,9.5,2,10.29,2C11.1,2,11.83,2.02,12.34,2.02z" />
+                        </svg>
                         <h3>夜 / NIGHT</h3>
                         <p>ホットミルクに混ぜてリラックスタイム。おやすみ前の栄養補給に。</p>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <!-- Recipe Section -->
         <section id="recipe" class="section">
             <div class="container">
                 <h2 class="section-title">かんたんレシピ</h2>
-                 <div class="recipe-grid">
+                <div class="recipe-grid">
                     <div class="recipe-card">
-                        <svg class="placeholder-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="none"/><path d="M0 150 Q 100 120, 200 150 T 400 150" stroke="#A9D0B5" stroke-width="3" fill="none"/><path d="M0 180 Q 50 150, 100 180 T 200 180 T 300 180 T 400 180" stroke="#C8EAD0" stroke-width="2" fill="none" opacity="0.7"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#aaa" font-size="16px" font-family="sans-serif">RECIPE 1</text></svg>
+                        <svg class="placeholder-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="none" />
+                            <path d="M0 150 Q 100 120, 200 150 T 400 150" stroke="#A9D0B5" stroke-width="3"
+                                fill="none" />
+                            <path d="M0 180 Q 50 150, 100 180 T 200 180 T 300 180 T 400 180" stroke="#C8EAD0"
+                                stroke-width="2" fill="none" opacity="0.7" /><text x="50%" y="50%"
+                                dominant-baseline="middle" text-anchor="middle" fill="#aaa" font-size="16px"
+                                font-family="sans-serif">RECIPE 1</text>
+                        </svg>
                         <div class="recipe-content">
                             <h3>モリンガ・グリーンラテ</h3>
                             <p>牛乳または豆乳200mlに、モリンガパウダー小さじ1杯を混ぜるだけ。お好みではちみつを。</p>
                         </div>
                     </div>
                     <div class="recipe-card">
-                        <svg class="placeholder-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="none"/><path d="M0 150 Q 100 120, 200 150 T 400 150" stroke="#A9D0B5" stroke-width="3" fill="none"/><path d="M0 180 Q 50 150, 100 180 T 200 180 T 300 180 T 400 180" stroke="#C8EAD0" stroke-width="2" fill="none" opacity="0.7"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#aaa" font-size="16px" font-family="sans-serif">RECIPE 2</text></svg>
+                        <svg class="placeholder-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="none" />
+                            <path d="M0 150 Q 100 120, 200 150 T 400 150" stroke="#A9D0B5" stroke-width="3"
+                                fill="none" />
+                            <path d="M0 180 Q 50 150, 100 180 T 200 180 T 300 180 T 400 180" stroke="#C8EAD0"
+                                stroke-width="2" fill="none" opacity="0.7" /><text x="50%" y="50%"
+                                dominant-baseline="middle" text-anchor="middle" fill="#aaa" font-size="16px"
+                                font-family="sans-serif">RECIPE 2</text>
+                        </svg>
                         <div class="recipe-content">
                             <h3>朝のスムージー</h3>
                             <p>バナナ、リンゴ、ヨーグルトと一緒にミキサーにかければ、栄養満点の朝食に。</p>
                         </div>
                     </div>
                     <div class="recipe-card">
-                        <svg class="placeholder-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="none"/><path d="M0 150 Q 100 120, 200 150 T 400 150" stroke="#A9D0B5" stroke-width="3" fill="none"/><path d="M0 180 Q 50 150, 100 180 T 200 180 T 300 180 T 400 180" stroke="#C8EAD0" stroke-width="2" fill="none" opacity="0.7"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#aaa" font-size="16px" font-family="sans-serif">RECIPE 3</text></svg>
+                        <svg class="placeholder-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="none" />
+                            <path d="M0 150 Q 100 120, 200 150 T 400 150" stroke="#A9D0B5" stroke-width="3"
+                                fill="none" />
+                            <path d="M0 180 Q 50 150, 100 180 T 200 180 T 300 180 T 400 180" stroke="#C8EAD0"
+                                stroke-width="2" fill="none" opacity="0.7" /><text x="50%" y="50%"
+                                dominant-baseline="middle" text-anchor="middle" fill="#aaa" font-size="16px"
+                                font-family="sans-serif">RECIPE 3</text>
+                        </svg>
                         <div class="recipe-content">
                             <h3>パンケーキミックスに</h3>
                             <p>いつものパンケーキミックスに加えるだけで、ほんのり緑色の栄養パンケーキが完成。</p>
                         </div>
                     </div>
-                 </div>
+                </div>
             </div>
         </section>
 
@@ -760,7 +831,22 @@
                             </div>
                         </div>
                         <div class="review-stars">
-                            <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg>
                         </div>
                         <p class="review-body">飲み始めてから、朝の目覚めがスッキリした気がします。味も抹茶のようで飲みやすく、毎日続けられています。</p>
                     </div>
@@ -773,7 +859,22 @@
                             </div>
                         </div>
                         <div class="review-stars">
-                           <svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg><svg viewBox="0 0 24 24"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg>
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg><svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+                            </svg>
                         </div>
                         <p class="review-body">野菜嫌いの子どものために購入しました。ホットケーキに混ぜてみたら、気づかずに美味しそうに食べてくれました。</p>
                     </div>
@@ -786,21 +887,25 @@
             <div class="container">
                 <h2 class="section-title">商品のご購入</h2>
                 <div class="purchase-container">
-                
+
                     <div class="product-box">
                         <h3>モリンガパウダー 100g</h3>
                         <p>毎日の習慣に。たっぷり使えるお徳用サイズです。</p>
                         <!-- Shop code 1 -->
-                        <script type='text/javascript' src='https://naturalbalance.shop-pro.jp/?mode=cartjs&pid=125146148&style=cloth_green&name=y&img=n&expl=n&stock=y&price=y&optview=n&inq=n&sk=n' charset='euc-jp'></script>
+                        <script type='text/javascript'
+                            src='https://naturalbalance.shop-pro.jp/?mode=cartjs&pid=125146148&style=cloth_green&name=y&img=n&expl=n&stock=y&price=y&optview=n&inq=n&sk=n'
+                            charset='euc-jp'></script>
                     </div>
-                    
+
                     <div class="product-box">
                         <h3>モリンガパウダー 30g（お試しサイズ）</h3>
                         <p>まずは試してみたい、という方にぴったりのサイズです。</p>
                         <!-- Shop code 2 -->
-                        <script type='text/javascript' src='https://naturalbalance.shop-pro.jp/?mode=cartjs&pid=177359770&style=cloth_green&name=y&img=n&expl=n&stock=y&price=y&optview=n&inq=n&sk=n' charset='euc-jp'></script>
+                        <script type='text/javascript'
+                            src='https://naturalbalance.shop-pro.jp/?mode=cartjs&pid=177359770&style=cloth_green&name=y&img=n&expl=n&stock=y&price=y&optview=n&inq=n&sk=n'
+                            charset='euc-jp'></script>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -814,4 +919,5 @@
     </footer>
 
 </body>
+
 </html>
